@@ -1,0 +1,40 @@
+.nav1 {
+    
+    @include flexStart(row,flex-start);
+    background-color: $colorDarkBlue2;
+    .todo {
+        font-weight: $bold;
+    }
+    .prime {
+        background: $backgroundDownMenu;
+        padding-right: 18px;
+        &:hover {
+            padding-right: 17px;
+            background-position: 53px 14px;
+        }
+    }
+    a {
+        position: relative;
+        color:$colorWhite;
+        text-decoration: none;
+        font-family: "Amazon Ember",Arial,sans-serif;
+        padding: 8px 9px;
+        margin: 4px 0 5px 0;
+        &:hover {
+            border: $border1white;
+            padding: 7px 8px;
+            .layerMenu {
+                visibility: visible;
+            }
+        }
+        .layerMenu {
+            position: absolute;
+            top: 22px;
+            left: -100px;
+            width: 428px;
+            height: 580px;
+            visibility: hidden;
+        }
+    }
+    
+}

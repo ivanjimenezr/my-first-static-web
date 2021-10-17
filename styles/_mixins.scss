@@ -1,0 +1,32 @@
+@mixin flexStart ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+    
+}
+
+@mixin boxTop {
+    padding:5px 1px 5px 20px;
+    
+    &:hover {
+        border: $border1white;
+        cursor: pointer;
+        padding:4px 0px 4px 19px;
+        background-position: 4px -1px;
+    }
+}
+@mixin textTop {
+    font-size: $font14;
+    font-weight: $bold;
+    a {
+        color: $colorWhite;
+        text-decoration: none;
+        
+    }
+    
+    span {
+        font-size: $font12;
+        font-weight: $light;
+    }
+}

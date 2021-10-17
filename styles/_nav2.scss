@@ -1,0 +1,22 @@
+.nav2 {
+    @include flexStart(row,flex-start);
+    background-color: $colorGreyLight;
+    font-size: $font12;
+    border-bottom: 1px $colorGrey solid;
+    padding: 5px;
+    .bold {
+        font-weight: $bold;
+    }
+    a{
+        color:$colorDark;
+        text-decoration: none;
+        margin: 0 11px;
+        padding: 5px 0;
+        &:hover {
+            color:$colorOrange;
+            border-bottom: 1px $colorOrange solid;
+            padding: 5px 0 4px 0;
+        }
+    }
+    
+}

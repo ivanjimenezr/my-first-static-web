@@ -1,0 +1,16 @@
+footer {
+    @include flexStart(row,center);
+    background-color: $colorDarkBlue2;
+    padding: 20px 0;
+    div {
+        @include flexStart(row,space-around);
+        ul {
+            list-style: none;
+            color: $colorWhite;
+            padding: 10px;
+        }
+        .title {
+            font-weight: $bold;
+        }
+    }
+}

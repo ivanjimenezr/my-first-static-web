@@ -1,0 +1,48 @@
+
+.barraTop {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    padding: 7px 0 7px 0px;
+    @include flexStart(row,space-around);
+    
+    .here{
+        @include boxTop;
+        @include textTop;
+        
+        
+        
+    }
+    
+    .backHere {
+        background: $backgroundHere;
+    }
+    .search{
+        @include flexStart(row,space-around);
+        margin: 0 0 0 25px;
+        padding: 0 5px 0 0;
+        button {
+            width: 40px;
+            height: 35px;
+            border: 0;
+            padding: 0;
+            margin-top: 4px;
+            background: $backgroundButton;
+            cursor: pointer;
+        }
+        input {
+            width: 642px;
+            padding: 7px 10px 12px 0;
+            margin: 0;
+            border: 0;
+            
+        }
+        select {
+            height: 35px;
+            border: 0;
+            background: $backgroundSelectet;
+            background-color: #f3f3f3;
+            border-right: 1px #ccc solid;
+        } 
+    }
+}
+
